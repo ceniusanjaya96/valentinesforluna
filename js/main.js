@@ -6,20 +6,6 @@ const letterOverlay = document.getElementById("letterOverlay");
 const closeLetter = document.getElementById("closeLetter");
 const music = document.getElementById("bgMusic");
 
-// play lagu
-music.volume = 0;
-music.play();
-
-// fade in volume
-let vol = 0;
-const fade = setInterval(() => {
-    if(vol < 0.5){
-        vol += 0.02;
-        music.volume = vol;
-    } else {
-        clearInterval(fade);
-    }
-}, 200);
 
 // ================= YES CLICK =================
 yesBtn.addEventListener("click", function() {
@@ -32,6 +18,21 @@ yesBtn.addEventListener("click", function() {
     document.body.style.background =
     "linear-gradient(to right, #ff4d88, #ff99cc)";
 
+    // play lagu
+    music.volume = 0;
+    music.play();
+    
+    // fade in volume
+    let vol = 0;
+    const fade = setInterval(() => {
+        if(vol < 0.5){
+            vol += 0.02;
+            music.volume = vol;
+        } else {
+            clearInterval(fade);
+        }
+    }, 200);
+    
 
     // munculin surat
     setTimeout(() => {
@@ -87,5 +88,6 @@ closeLetter.addEventListener("click", function() {
     letterOverlay.style.display = "none";
     music.pause();
 });
+
 
 
