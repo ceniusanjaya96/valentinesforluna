@@ -11,7 +11,7 @@ yesBtn.addEventListener("click", function() {
 
     // ganti sticker happy
     sticker.src = "images/happy.png";
-    message.innerHTML = "I knew it 😭💖";
+    message.innerHTML = "YEYYY THANKYOUUU ME!!! 😭💖";
 
     // background berubah
     document.body.style.background =
@@ -73,7 +73,7 @@ document.addEventListener("mousemove", function(e) {
         ];
 
         sticker.src = images[Math.floor(Math.random() * images.length)];
-        message.innerHTML = "Pliss jangan pilih NO 😭";
+        message.innerHTML = "Pliss jangan pilih NO ME. COBA DEH YES DULU! 😭";
 
         // YES makin gede tiap dia gagal ngejar NO 😈
         yesBtn.style.transform += " scale(1.05)";
@@ -86,3 +86,4 @@ closeLetter.addEventListener("click", function() {
     letterOverlay.style.display = "none";
     music.pause();
 });
+
