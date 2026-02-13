@@ -74,6 +74,8 @@ button {
     border-radius: 15px;
     text-align: center;
     animation: popUp 0.4s ease;
+    max-height:90%;
+    overflow:auto;
 }
 
 .letter h2 {
@@ -110,4 +112,5 @@ button {
     color:black;
     background: white;
     border: 1px solid #cdcdcd;
+
 }
